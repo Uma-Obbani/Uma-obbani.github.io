@@ -1,67 +1,15 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #5f2c82, #49a09d);
-    color: white;
-}
-
-.container {
-    display: flex;
-}
-
-.sidebar {
-    width: 220px;
-    height: 100vh;
-    background: rgba(0,0,0,0.3);
-    padding: 30px 20px;
-    position: fixed;
-}
-
-.sidebar h2 {
-    margin-bottom: 30px;
-}
-
-.sidebar a {
-    display: block;
-    color: white;
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #5f2c82;
+    border-radius: 25px;
     text-decoration: none;
-    margin: 15px 0;
-}
-
-.sidebar a:hover {
-    text-decoration: underline;
-}
-
-.content {
-    margin-left: 240px;
-    padding: 40px;
-    width: 100%;
-}
-
-section {
-    margin-bottom: 60px;
-}
-
-.projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background: rgba(255,255,255,0.1);
-    padding: 20px;
-    border-radius: 12px;
+    font-weight: bold;
     transition: 0.3s ease;
 }
 
-.project-card:hover {
-    background: rgba(255,255,255,0.2);
-    transform: translateY(-5px);
-}
-
-.project-card a {
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: none;
+.btn:hover {
+    background: #eee;
 }
