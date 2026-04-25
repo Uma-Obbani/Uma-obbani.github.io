@@ -1,19 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #333;
+}
+
+/* Container */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* Headings */
+h2 {
+  color: #5f2c82;
+  margin-bottom: 15px;
+}
+
+/* Project Cards */
+.project {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Buttons */
 .btn {
   display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background: linear-gradient(135deg, #5f2c82, #49a09d);
-  color: #ffffff;
-  border-radius: 30px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  color: white;
+  border-radius: 25px;
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  font-weight: bold;
+  transition: 0.3s ease;
 }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
-  opacity: 0.95;
+  transform: scale(1.05);
+  opacity: 0.9;
 }
