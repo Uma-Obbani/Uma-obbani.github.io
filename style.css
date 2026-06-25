@@ -1,111 +1,184 @@
-/* =========================
-   General Page
-========================= */
+/* ==============================
+   Uma Obbani Portfolio Styling
+   AI / Data Engineer Theme
+================================ */
+
+
+/* General Page */
+
+* {
+  box-sizing: border-box;
+}
+
 
 body {
+
   margin: 0;
+
   padding: 0;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  background: linear-gradient(135deg, #eef4ff, #f8fbff);
-  color: #1f2937;
+
+  font-family: 
+    "Inter",
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+
+  background:
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #1e293b
+    );
+
+
+  color: #e5e7eb;
+
 }
 
 
-/* =========================
-   Main Section
-========================= */
+
+/* Main Container */
 
 section {
+
   max-width: 1100px;
+
   margin: 50px auto;
+
   padding: 25px;
+
 }
 
 
-/* Page Title */
+
+/* Page Heading */
 
 h2 {
+
   text-align: center;
-  font-size: 42px;
-  color: #0f172a;
+
+  font-size: 44px;
+
   margin-bottom: 45px;
+
+
+  color: #ffffff;
+
+
   letter-spacing: 1px;
+
 }
 
 
-/* =========================
-   Project Cards
-========================= */
+
+/* Project Cards */
 
 .project {
-  background: #ffffff;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f8fafc
+    );
+
+
+  color: #1e293b;
+
+
   padding: 35px;
+
+
   margin-bottom: 35px;
 
-  border-radius: 18px;
 
-  border-left: 8px solid #2563eb;
+  border-radius: 22px;
+
+
+  border-left: 8px solid #38bdf8;
+
 
   box-shadow:
-    0 10px 25px rgba(0,0,0,0.10);
+    0 20px 45px rgba(0,0,0,0.35);
 
-  transition: 0.3s ease;
+
+  transition: all 0.3s ease;
+
 }
 
 
-/* Hover Effect */
+
+/* Card Hover */
 
 .project:hover {
-  transform: translateY(-5px);
+
+  transform: translateY(-8px);
+
 
   box-shadow:
-    0 18px 35px rgba(0,0,0,0.16);
+    0 30px 60px rgba(56,189,248,0.25);
+
 }
+
 
 
 /* Project Titles */
 
 .project h3 {
-  color: #1d4ed8;
-  font-size: 28px;
+
   margin-top: 0;
+
+
+  font-size: 29px;
+
+
+  color: #0369a1;
+
 }
 
 
-/* Highlight Labels */
+
+/* Blue Labels */
 
 strong {
+
   color: #2563eb;
+
 }
 
 
-/* =========================
-   Text
-========================= */
+
+/* Paragraphs and Lists */
 
 p,
 li {
 
   font-size: 17px;
 
+
   line-height: 1.7;
+
 }
+
 
 
 p {
+
   margin-bottom: 16px;
+
 }
 
 
-/* =========================
-   Lists
-========================= */
+
+/* Lists */
 
 ul {
 
   padding-left: 28px;
 
 }
+
 
 
 li {
@@ -115,86 +188,107 @@ li {
 }
 
 
+
 li::marker {
 
-  color: #2563eb;
+  color: #0284c7;
 
 }
 
 
-/* =========================
-   Buttons
-========================= */
+
+/* Buttons */
 
 .btn {
 
   display: inline-block;
 
+
   margin-top: 20px;
 
-  padding: 14px 26px;
+
+  padding: 14px 28px;
 
 
-  background: linear-gradient(
-    135deg,
-    #2563eb,
-    #1e40af
-  );
+  background:
+
+    linear-gradient(
+
+      135deg,
+
+      #0ea5e9,
+
+      #2563eb
+
+    );
 
 
   color: white;
 
-  border-radius: 30px;
-
 
   text-decoration: none;
 
-  font-weight: bold;
+
+  font-weight: 700;
+
+
+  border-radius: 40px;
 
 
   box-shadow:
 
-    0 6px 15px rgba(37,99,235,0.35);
+    0 8px 20px rgba(37,99,235,0.4);
 
 
-  transition: 0.3s;
+  transition: 0.3s ease;
 
 }
 
 
+
+/* Button Hover */
 
 .btn:hover {
 
+  transform: scale(1.08);
 
-  transform: scale(1.05);
 
+  background:
 
-  background: linear-gradient(
+    linear-gradient(
 
-    135deg,
+      135deg,
 
-    #1d4ed8,
+      #2563eb,
 
-    #172554
+      #1e40af
 
-  );
+    );
 
 }
 
 
-/* =========================
-   Mobile Responsive
-========================= */
 
+/* Scroll Smooth */
+
+html {
+
+  scroll-behavior: smooth;
+
+}
+
+
+
+/* Mobile Responsive */
 
 @media(max-width: 700px) {
 
 
   section {
 
-    margin: 10px;
+    margin: 15px;
 
-    padding: 15px;
+    padding: 10px;
 
   }
 
@@ -202,7 +296,7 @@ li::marker {
 
   h2 {
 
-    font-size: 32px;
+    font-size: 34px;
 
   }
 
@@ -211,6 +305,8 @@ li::marker {
   .project {
 
     padding: 22px;
+
+    border-radius: 16px;
 
   }
 
@@ -223,10 +319,21 @@ li::marker {
   }
 
 
+
   p,
   li {
 
     font-size: 16px;
+
+  }
+
+
+
+  .btn {
+
+    width: 100%;
+
+    text-align: center;
 
   }
 
